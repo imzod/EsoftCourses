@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+<div class="container">
+    <h1>Регистрация</h1>
+    <fieldset class="form">
+        <form action="" class="form-1" method="GET">
+            <Div class="group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Андрей" required>
+                <label for="lastname">Фамилия:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Ковалев" required>
+            </Div>
+            <Div class="group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </Div>
+            <div class="group">
+                <span>Пол:</span>
+                <input type="radio" name="sex" id="m" required>
+                <label for="m">Мужской</label>
+                <input type="radio" name="sex" id="f" required>
+                <label for="f">Женский</label>
+            </div>
+            <div class="group">
+                <label for="birthday">Дата рождения:</label>
+                <input type="date" id="birthday" name="birthday" min="1940-01-01" max="2021-03-01" required>
+            </div>
+            <div class="reg">
+                <input type="submit" value="Зарегистрироваться" class="button">
+            </div>
+    </fieldset>
+    <div class="confirm">Уже есть аккаунт? <a href="signin.html">Войдите</a></div>
+</div>
+</body>
+
+</html>
