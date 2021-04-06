@@ -12,36 +12,51 @@
 
 <body>
 <div class="container">
-    <h1>Регистрация</h1>
-    <form action="" class="form" method="GET">
-        <div class="form_2">
+    <form action="" class="registration" method="GET">
+        <h1>Регистрация</h1>
+        <div>
             <label for="name" class="label">Имя:</label>
+        </div>
+        <div>
             <input type="text" id="name" name="name" placeholder="Андрей" class="field" required>
+        </div>
+        <div>
             <label for="lastname" class="label">Фамилия:</label>
+        </div>
+        <div>
             <input type="text" id="lastname" name="lastname" placeholder="Ковалев" class="field" required>
         </div>
-        <div class="form_2">
+        <div>
             <label for="email" class="label">Email:</label>
+        </div>
+        <div>
             <input type="email" id="email" name="email" placeholder="Email" class="field" required>
+        </div>
+        <div>
             <label for="password" class="label">Пароль:</label>
+        </div>
+        <div>
             <input type="password" id="password" name="password" placeholder="Password" class="field" required>
         </div>
-        <div class="form_2">
+        <div>
             <span class="label">Пол:</span>
             <input type="radio" name="sex" id="m" required>
             <label for="m">Мужской</label>
             <input type="radio" name="sex" id="f" required>
             <label for="f">Женский</label>
         </div>
-        <div class="form_2">
+        <div>
             <label for="birthday" class="label">Дата рождения:</label>
-            <input type="date" id="birthday" name="birthday" min="1940-01-01" max="2021-03-01" required>
+        </div>
+        <div>
+            <input type="text" id="birthday" name="birthday" class="field" placeholder="22-10-1994" required
+                   pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}">
         </div>
         <div class="reg">
-            <input type="submit" value="Зарегистрироваться" class="button">
+            <input type="submit" value="Зарегистрироваться" class="button" placeholder="">
         </div>
+        <div class="confirm">Уже есть аккаунт? <a href="signin.html">Войдите</a></div>
     </form>
-    <div class="confirm">Уже есть аккаунт? <a href="signin.html">Войдите</a></div>
     <script src="app.js"></script>
 </div>
 </body>

@@ -1,31 +1,55 @@
 body {
     font-family: 'Open sans', sans-serif;
-    background-color: #a8dadc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #F5F5F5;
     min-height: 100vh;
 }
 
+h1 {
+    background-color: rgba(255, 219, 58, 0.3);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .container {
-    background: #f1faee;
-    width: 900px;
-    height: 600px;
-    border: 1px solid black;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 80px auto;
+    width: 90%;
+    max-width: 800px;
 }
 
-.form {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
+.registration {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid #ffdb3a;
+}
+
+.field {
     width: 100%;
+    border: 1px solid #C8C8C8;
+    background-color: #fafafa;
+    padding: 5px 3px;
+    margin: 10px 80px;
 }
 
+.field:focus {
+    outline: none;
+    border: 1px solid black;
+    background-color: white;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+
+/*
 .form_2 {
     margin-bottom: 10px;
 }
@@ -34,10 +58,7 @@ body {
     border-radius: 5px;
     border: 1px solid black;
     padding: 4px 2px;
-}
-
-.label {
-    margin-right: 10px;
+    width: 100%;
 }
 
 input:focus {
@@ -51,7 +72,6 @@ input:focus {
 }
 
 .button {
-    width: 40%;
     padding: 10px 15px;
     border-radius: 0.5em;
     text-align: center;
@@ -63,12 +83,6 @@ input:focus {
     box-shadow: 0 0 10px #cfdef8;
 }
 
-.form::after {
-    display: block;
-    content: '';
-    border-bottom: 1px solid black;
-}
 
-.confirm {
-    margin-top: 10px;
-}
+
+*/
