@@ -6,30 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="app2.css">
+    <link rel="stylesheet" href="app.css">
     <title>Вход</title>
 </head>
 
 <body>
 <div class="container">
-    <h1>Вход</h1>
-    <fieldset class="form">
-        <form action="" class="form-1" method="GET">
-            <Div class="group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-            </Div>
-            <Div class="group">
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" name="password" placeholder="Password" required>
-            </Div>
+    <form action="" class="registration" method="GET">
+        <h1>Вход</h1>
+        <div>
+            <label for="email" class="label">Email:</label>
+        </div>
+        <div>
+            <input type="email" id="email" name="email" placeholder="Email" class="field" required>
+        </div>
+        <div>
+            <label for="password" class="label">Пароль:</label>
+        </div>
+        <div>
+            <input type="password" id="password" name="password" placeholder="Password" class="field" required>
+        </div>
+        <div>
+            <input type="submit" value="Вход" class="button">
+        </div>
+        <hr>
+        <div class="confirm">Еще не зарегистрированы? <a href="registration.html">Регистрация</a></div>
+    </form>
 
-            <div class="reg">
-                <input type="submit" value="Вход" class="button">
-            </div>
-        </form>
-    </fieldset>
-    <div class="confirm">Еще не зарегистрированы? <a href="registration.html">Регистрация</a></div>
 </div>
 </body>
 

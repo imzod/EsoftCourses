@@ -18,13 +18,13 @@
             <label for="name" class="label">Имя:</label>
         </div>
         <div>
-            <input type="text" id="name" name="name" placeholder="Андрей" class="field" required>
+            <input type="text" id="name" name="name" placeholder="Andrey" class="field" required>
         </div>
         <div>
             <label for="lastname" class="label">Фамилия:</label>
         </div>
         <div>
-            <input type="text" id="lastname" name="lastname" placeholder="Ковалев" class="field" required>
+            <input type="text" id="lastname" name="lastname" placeholder="Kovalev" class="field" required>
         </div>
         <div>
             <label for="email" class="label">Email:</label>
@@ -39,11 +39,22 @@
             <input type="password" id="password" name="password" placeholder="Password" class="field" required>
         </div>
         <div>
+            <label for="repeat_password" class="label">Повторите пароль:</label>
+        </div>
+        <div>
+            <input type="password" id="repeat_password" name="repeat_password" placeholder="Repeat password"
+                   class="field" required>
+        </div>
+        <div class="rad">
             <span class="label">Пол:</span>
-            <input type="radio" name="sex" id="m" required>
-            <label for="m">Мужской</label>
-            <input type="radio" name="sex" id="f" required>
-            <label for="f">Женский</label>
+            <div>
+                <input type="radio" name="sex" id="m" required>
+                <label for="m">Мужской</label>
+            </div>
+            <div>
+                <input type="radio" name="sex" id="f" required>
+                <label for="f">Женский</label>
+            </div>
         </div>
         <div>
             <label for="birthday" class="label">Дата рождения:</label>
@@ -52,9 +63,10 @@
             <input type="text" id="birthday" name="birthday" class="field" placeholder="22-10-1994" required
                    pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}">
         </div>
-        <div class="reg">
+        <div>
             <input type="submit" value="Зарегистрироваться" class="button" placeholder="">
         </div>
+        <hr>
         <div class="confirm">Уже есть аккаунт? <a href="signin.html">Войдите</a></div>
     </form>
     <script src="app.js"></script>
